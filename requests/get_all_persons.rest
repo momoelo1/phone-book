@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/info
+
+###
+POST http://localhost:3001/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Moad Elomari",
+    "number": "55-7893145"
+}
+
+
+###
+PUT http://localhost:3001/api/persons/:id HTTP/1.1
+
+{
+    "name": "Anna",
+    "number": "040-1234556"
+}
